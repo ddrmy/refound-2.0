@@ -1,5 +1,7 @@
+import { Routes } from "./routes";
+
 export function App(){
   return(
-    <div>Refound Project</div>
+    <Routes />
   )
 }
