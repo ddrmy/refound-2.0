@@ -1,4 +1,4 @@
-import { Routes, Route, Outlet } from "react-router"
+import { Routes, Route } from "react-router"
 
 import { Refund } from "../pages/Refund"
 import { NotFound } from "../pages/NotFound"
