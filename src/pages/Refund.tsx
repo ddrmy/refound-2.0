@@ -2,6 +2,7 @@ import { CATEGORIES, CATEGORIES_KEYS } from "../utils/categories";
 import { Input } from "../components/Input";
 import { Select } from "../components/Select";
 import { useState } from "react";
+import { Upload } from "../components/Uploadt";
 
 export function Refund(){
     const [category, setCategory] = useState("")
@@ -16,8 +17,9 @@ export function Refund(){
         <Input
         required
         legend="Nome da solicitação"
-         />
+        />
 
+<div className="flex gap-4">
          <Select
          required
          legend="Categoria"
@@ -33,5 +35,10 @@ export function Refund(){
                 ))
             }
          </Select>
+
+         <Input legend="Valor" required/>
+            </div>
+
+            <Upload filename="gabriel.png"/>
     </form>
 }
